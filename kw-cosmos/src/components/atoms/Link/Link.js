@@ -1,5 +1,5 @@
 import React from 'react'
-import { Gradient, TextWrapper, Wrapper } from './Link.styles'
+import { TextWrapper, Wrapper } from './Link.styles'
 
 export function Link({source, title}){
     return (
