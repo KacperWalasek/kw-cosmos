@@ -8,24 +8,28 @@ export const linkData = {
         title: 'Rockets',
         img: rockets,
         url: '/rockets',
-        getArrayFromResult: rocket => rocket.name,
+        tableTitles: ["Name", "Active"],
+        getArrayFromResult: rocket => [rocket.name, rocket.active? "Yes": "No"],
     },
     crew: {
         title: 'Crew',
         img: crew,
         url: '/crew',
-        getArrayFromResult: member => member.name,
+        tableTitles: ["Name", "Status"],
+        getArrayFromResult: member => [member.name, member.status],
     },
     capsules: {
         title: 'Capsules',
         img: capsules,
         url: '/capsules',
-        getArrayFromResult: capsule => capsule.type,
+        tableTitles: ["Type", "Status"],
+        getArrayFromResult: capsule => [capsule.type, capsule.status],
     },
     starlink: {
         title: 'Starlink',
         img: starlink,
         url: '/starlink',
-        getArrayFromResult: starlink => starlink.spaceTrack.OBJECT_NAME,
+        tableTitles: ["Name", "Version"],
+        getArrayFromResult: starlink => [starlink.spaceTrack.OBJECT_NAME, starlink.version],
     }
 }

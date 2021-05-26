@@ -7,3 +7,12 @@ export const HeaderWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
 `;
+
+export const CloseButtonWrapper = styled.button`
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    cursor: pointer;
+`;

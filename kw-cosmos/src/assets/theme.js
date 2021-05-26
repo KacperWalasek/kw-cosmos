@@ -5,6 +5,7 @@ export const theme = {
         buttonHover: '#05C9B7',
         modal: '#2B224A',
         tableHeader: '#342A56',
-        tableHeaderActive: "#251D42"
+        tableHeaderActive: "#251D42",
+        tableHeaderFont: '#A094C6',
     }
 }

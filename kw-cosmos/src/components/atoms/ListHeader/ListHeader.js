@@ -1,12 +1,15 @@
 import React, { useContext } from 'react'
-import { HeaderWrapper } from './ListHeader.styles';
+import { CloseButtonWrapper, HeaderWrapper } from './ListHeader.styles';
 import {ListContext} from './../../../providers/ListProvider'
+import { Close } from 'react-ionicons'
 export function ListHeader(){
     const { title, closeModal } = useContext(ListContext)
     return (
         <HeaderWrapper>
             <span >{title}</span>
-            <div onClick={closeModal}>x</div>
+            <CloseButtonWrapper onClick={closeModal}>
+                <Close color="white" height="27px" width="27px"/>
+            </CloseButtonWrapper>
         </HeaderWrapper>
     );
 }

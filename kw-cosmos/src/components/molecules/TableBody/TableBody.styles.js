@@ -8,6 +8,3 @@ export const BodyWrapper = styled.ul`
     height: 100%;
     overflow: auto;
 `;
-export const ListItem = styled.li`
-    height: 52px;
-`;

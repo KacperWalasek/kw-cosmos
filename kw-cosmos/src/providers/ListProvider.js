@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { getList } from '../api/getListFunctions';
+import { SortType } from '../constants/sortType';
 
 const defaultValue = {
     title: "",
     loading: false,
     list: [],
+    tableTitles: ['',''],
     loadList: () => {},
     sortList: () => {},
     closeModal: () => {}
@@ -23,13 +25,33 @@ export function ListProvider({children, modalData, closeModal}){
             setLoading(false)
         });
     }
+    const sortList = (columnIndex, sortType)=>{
+        let newList;
+        switch(sortType){
+            case SortType.ASCENDING:
+                newList = list.sort((a, b)=>a[columnIndex] > b[columnIndex]? 1: -1);
+                break;
+            case SortType.DESCENDING:
+                newList = list.sort((a, b)=>a[columnIndex] < b[columnIndex]? 1: -1)  
+                break;
+            case SortType.DEFAULT:
+                // Original order indexes are in the last column
+                const indexingColum = list[0]?.length - 1;
+                newList = list.sort((a, b)=> a[indexingColum] - b[indexingColum]);
+                break;
+            default:
+                return;
+        }
+        setList([...newList]);
+    }
     return(
         <ListContext.Provider value={{
             title: modalData.title,
             loading,
             list,
             loadList,
-            sortList: () => {},
+            sortList,
+            tableTitles: modalData.tableTitles,
             closeModal
         }}>
             {children}
