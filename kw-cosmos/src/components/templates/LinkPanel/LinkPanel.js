@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from '../../atoms/Link/Link'
-import {linkData} from '../../../constants/linkData'
+import {linkData} from './linkData'
 import {Wrapper} from './LinkPanel.styles'
 
 export function LinkPanel({setModal}){

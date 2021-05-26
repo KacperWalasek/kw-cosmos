@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { SortType } from '../../../constants/sortType';
+import { SortType } from '../../../utils/sortType';
 import { ListContext } from '../../../providers/ListProvider';
 import { Wrapper } from './TableHeaderItem.styles';
 import { ArrowDown, ArrowUp, SwapVertical } from 'react-ionicons'

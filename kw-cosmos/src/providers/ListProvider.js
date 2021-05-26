@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { getList } from '../api/getListFunctions';
-import { SortType } from '../constants/sortType';
+import { getList } from '../utils/api';
+import { SortType } from '../utils/sortType';
 
-const defaultValue = {
+export const ListContext = React.createContext({
     title: "",
     loading: false,
     list: [],
@@ -10,13 +10,12 @@ const defaultValue = {
     loadList: () => {},
     sortList: () => {},
     closeModal: () => {}
-}
-
-export const ListContext = React.createContext(defaultValue);
+});
 
 export function ListProvider({children, modalData, closeModal}){
     const [loading, setLoading] = useState(true)
     const [list, setList] = useState([])
+
     const loadList = ()=>{
         setLoading(true)
         getList(modalData)

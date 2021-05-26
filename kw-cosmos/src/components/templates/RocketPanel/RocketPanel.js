@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Button } from '../../atoms/Button/Button';
-import { RocketAnimation } from '../../molecules/RocketAnimation/RocketAnimation';
+import { RocketAnimation } from '../../organisms/RocketAnimation/RocketAnimation';
 import { CenterRow, PlanetWrapper, Wrapper } from './RocketPanel.styles'
 import planet from '../../../assets/images/planet.png'
 

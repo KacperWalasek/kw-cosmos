@@ -1,11 +1,11 @@
 import React from 'react';
-import { ListWindow } from '../../organisms/ListWindow.js/ListWindow';
+import { ListModal } from '../../organisms/ListModal/ListModal';
 import { PanelWrapper } from './ListPanel.styles';
 
 export function ListPanel(){
     return (
         <PanelWrapper>
-            <ListWindow title="capsules"></ListWindow>
+            <ListModal title="capsules"></ListModal>
         </PanelWrapper>
     );
 };

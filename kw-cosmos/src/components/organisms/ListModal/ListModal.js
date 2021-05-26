@@ -1,13 +1,13 @@
 import React from 'react';
 import { ListHeader } from '../../atoms/list/ListHeader/ListHeader';
 import { Table } from '../Table/Table';
-import { WindowWrapper } from './ListWindow.styles';
+import { ModalWrapper } from './ListModal.styles';
 
-export function ListWindow(){
+export function ListModal(){
     return (
-        <WindowWrapper>
+        <ModalWrapper>
             <ListHeader/>
             <Table/>
-        </WindowWrapper>
+        </ModalWrapper>
     );
 };

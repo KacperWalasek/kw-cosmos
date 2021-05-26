@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Footer } from '../../components/atoms/Footer/Footer'
 import { Header } from '../../components/atoms/Header/Header'
-import { Background } from '../../components/templates/BackgroundShapes.js/Background'
+import { Background } from '../../components/templates/Background/Background'
 import { LinkPanel } from '../../components/templates/LinkPanel/LinkPanel'
 import { ListPanel } from '../../components/templates/ListPanel/ListPanel'
 import { RocketPanel } from '../../components/templates/RocketPanel/RocketPanel'

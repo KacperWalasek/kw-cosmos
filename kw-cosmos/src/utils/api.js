@@ -1,4 +1,4 @@
-import { baseUrl } from "./constants";
+export const baseUrl = "https://api.spacexdata.com/v4"
 
 export function getList(linkData){
     return fetch(baseUrl + linkData.url, {method: 'GET'})

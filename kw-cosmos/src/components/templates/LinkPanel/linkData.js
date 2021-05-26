@@ -1,7 +1,7 @@
-import crew from '../assets/images/crew.png'
-import starlink from '../assets/images/details.png'
-import rockets from '../assets/images/rockets.png'
-import capsules from '../assets/images/capsules.png'
+import crew from '../../../assets/images/crew.png'
+import starlink from '../../../assets/images/details.png'
+import rockets from '../../../assets/images/rockets.png'
+import capsules from '../../../assets/images/capsules.png'
 
 export const linkData = {
     capsules: {
