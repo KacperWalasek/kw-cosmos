@@ -1,18 +1,14 @@
 import React from 'react';
-import crew from '../../../assets/images/crew.png'
-import details from '../../../assets/images/details.png'
-import rockets from '../../../assets/images/rockets.png'
-import capsules from '../../../assets/images/capsules.png'
 import {Link} from '../../atoms/Link/Link'
+import {linkData} from '../../../constants/linkData'
 import {Wrapper} from './LinkPanel.styles'
 
-export function LinkPanel(){
+export function LinkPanel({setModal}){
     return (
         <Wrapper>
-            <Link source={capsules} title="Capsules"></Link>
-            <Link source={crew} title="Crew"></Link>
-            <Link source={rockets} title="Rockets"></Link>
-            <Link source={details} title="Details"></Link>
+            {Object.values(linkData).map(link=>(
+                <Link key={link.title} source={link.img} title={link.title} onClick={()=>setModal(link)}/>
+            ))}
         </Wrapper>
     );
 };
