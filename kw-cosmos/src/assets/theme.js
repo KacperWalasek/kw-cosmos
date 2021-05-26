@@ -7,5 +7,10 @@ export const theme = {
         tableHeader: '#342A56',
         tableHeaderActive: "#251D42",
         tableHeaderFont: '#A094C6',
+        dots: {
+            red: '#E34A67',
+            green: '#00C9B7',
+            purple: '#7860D7'
+        }
     }
 }

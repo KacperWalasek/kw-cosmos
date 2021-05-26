@@ -16,3 +16,7 @@ export const CenterRow = styled.div`
     flex-direction: column;
     align-items: center;
 `;
+
+export const PlanetWrapper = styled.div`
+    z-index: 5;
+`;

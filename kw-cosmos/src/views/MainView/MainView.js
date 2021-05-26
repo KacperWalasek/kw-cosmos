@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Background } from '../../components/templates/BackgroundShapes.js/Background'
 import { LinkPanel } from '../../components/templates/LinkPanel/LinkPanel'
 import { ListPanel } from '../../components/templates/ListPanel/ListPanel'
 import { RocketPanel } from '../../components/templates/RocketPanel/RocketPanel'
@@ -13,14 +14,16 @@ export function MainView(){
         setModalData(data);
     }
     return (
-        <ViewWrapper>
-            <LinkPanel setModal={setModal}></LinkPanel>
-            <RocketPanel></RocketPanel>
-            {showModal? 
-                <ListProvider modalData={modalData} closeModal={()=>setShowModal(false)}>
-                    <ListPanel></ListPanel>
-                </ListProvider>
-            :null}
-        </ViewWrapper>
+        <Background>
+            <ViewWrapper>
+                <LinkPanel setModal={setModal}></LinkPanel>
+                <RocketPanel></RocketPanel>
+                {showModal? 
+                    <ListProvider modalData={modalData} closeModal={()=>setShowModal(false)}>
+                        <ListPanel></ListPanel>
+                    </ListProvider>
+                :null}
+            </ViewWrapper>
+        </Background>
     )
 }
