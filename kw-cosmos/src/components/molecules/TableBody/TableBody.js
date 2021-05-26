@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { ListContext } from '../../../providers/ListProvider';
 import { BodyWrapper } from './TableBody.styles';
-import {ListItem} from '../../atoms/ListItem/ListItem'
+import {ListItem} from '../../atoms/list/ListItem/ListItem'
 export function TableBody(){
     const { list, loading, loadList } = useContext(ListContext)
     useEffect(()=>{

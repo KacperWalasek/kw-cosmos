@@ -1,6 +1,5 @@
 import React from 'react';
-import { ListProvider} from '../../../providers/ListProvider';
-import { ListHeader } from '../../atoms/ListHeader/ListHeader';
+import { ListHeader } from '../../atoms/list/ListHeader/ListHeader';
 import { Table } from '../Table/Table';
 import { WindowWrapper } from './ListWindow.styles';
 

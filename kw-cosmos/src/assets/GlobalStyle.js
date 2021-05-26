@@ -1,6 +1,7 @@
 import {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
     *, *::after, *::before{
         box-sizing: border-box;
         color: white;
@@ -12,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     .xs-font{
         //styleName: 12/Regular;
-        font-family: Inter;
+        font-family: 'Inter', sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -22,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     .s-font{
         //styleName: 12/Semi Bold;
-        font-family: Inter;
+        font-family: 'Inter', sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: 600;
@@ -32,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     .m-font{
         //styleName: 14/Semi Bold;
-        font-family: Inter;
+        font-family: 'Inter', sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
@@ -42,7 +43,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     .l-font{
         //styleName: 16/Semi Bold;
-        font-family: Inter;
+        font-family: 'Inter', sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -52,7 +53,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     .xl-font{
         //styleName: 24/Bold;
-        font-family: Inter;
+        font-family: 'Inter', sans-serif;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;

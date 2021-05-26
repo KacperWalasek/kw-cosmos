@@ -11,6 +11,11 @@ export const theme = {
             red: '#E34A67',
             green: '#00C9B7',
             purple: '#7860D7'
-        }
+        },
+        scrollbar:{
+            background: '#221A3C',
+            thumb: '#53477D'
+        },
+        footerFont: '#8D7FBC'
     }
 }

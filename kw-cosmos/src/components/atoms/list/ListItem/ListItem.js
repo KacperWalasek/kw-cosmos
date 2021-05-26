@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Wrapper } from './ListItem.styles';
 export function ListItem({values}){
     return (

@@ -11,7 +11,7 @@ export function TableHeader(){
                 <TableHeaderItem 
                     title={title} 
                     columnIndex={index} 
-                    active={index == activeItem}
+                    active={index === activeItem}
                     activate={() => setActiveItem(index)}
                 />
             ))}

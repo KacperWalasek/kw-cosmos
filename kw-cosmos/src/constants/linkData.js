@@ -4,12 +4,12 @@ import rockets from '../assets/images/rockets.png'
 import capsules from '../assets/images/capsules.png'
 
 export const linkData = {
-    rockets: {
-        title: 'Rockets',
-        img: rockets,
-        url: '/rockets',
-        tableTitles: ["Name", "Active"],
-        getArrayFromResult: rocket => [rocket.name, rocket.active? "Yes": "No"],
+    capsules: {
+        title: 'Capsules',
+        img: capsules,
+        url: '/capsules',
+        tableTitles: ["Type", "Status"],
+        getArrayFromResult: capsule => [capsule.type, capsule.status],
     },
     crew: {
         title: 'Crew',
@@ -18,12 +18,12 @@ export const linkData = {
         tableTitles: ["Name", "Status"],
         getArrayFromResult: member => [member.name, member.status],
     },
-    capsules: {
-        title: 'Capsules',
-        img: capsules,
-        url: '/capsules',
-        tableTitles: ["Type", "Status"],
-        getArrayFromResult: capsule => [capsule.type, capsule.status],
+    rockets: {
+        title: 'Rockets',
+        img: rockets,
+        url: '/rockets',
+        tableTitles: ["Name", "Active"],
+        getArrayFromResult: rocket => [rocket.name, rocket.active? "Yes": "No"],
     },
     starlink: {
         title: 'Starlink',

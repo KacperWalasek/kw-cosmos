@@ -1,9 +1,9 @@
 import React from 'react'
 import { ButtonWrapper } from './Button.styles'
 
-export function Button({source, title}){
+export function Button(params){
     return (
-        <ButtonWrapper className="l-font">
+        <ButtonWrapper className="l-font" {...params}>
             Lunch Rocket!
         </ButtonWrapper>
     )

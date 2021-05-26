@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Footer } from '../../components/atoms/Footer/Footer'
+import { Header } from '../../components/atoms/Header/Header'
 import { Background } from '../../components/templates/BackgroundShapes.js/Background'
 import { LinkPanel } from '../../components/templates/LinkPanel/LinkPanel'
 import { ListPanel } from '../../components/templates/ListPanel/ListPanel'
@@ -16,6 +18,7 @@ export function MainView(){
     return (
         <Background>
             <ViewWrapper>
+                <Header/>
                 <LinkPanel setModal={setModal}></LinkPanel>
                 <RocketPanel></RocketPanel>
                 {showModal? 
@@ -23,6 +26,7 @@ export function MainView(){
                         <ListPanel></ListPanel>
                     </ListProvider>
                 :null}
+                <Footer/>
             </ViewWrapper>
         </Background>
     )
